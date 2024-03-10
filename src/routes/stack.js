@@ -1,13 +1,10 @@
 import { createStackNavigator } from '@react-navigation/stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import LoginScreen from '../screens/auth/LoginScreen';
 import RegisterScreen from '../screens/auth/RegisterScreen';
 import StartScreen from '../screens/pages/StartSreen';
 
 
 const Stack = createStackNavigator();
-
-const Tab = createBottomTabNavigator();
 
 export default function MyStack() {
   return (
@@ -34,15 +31,5 @@ export default function MyStack() {
         }}
       />
     </Stack.Navigator>
-  );
-}
-
-export default function MyTabs() {
-  return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Historique" component={HistoriqueScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
-    </Tab.Navigator>
   );
 }
