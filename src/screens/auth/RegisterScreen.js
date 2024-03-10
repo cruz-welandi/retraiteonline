@@ -17,7 +17,7 @@ function RegisterScreen() {
         <ScrollView style={styles.scrollContainer}>
             <View style={styles.container}>
                 <Image
-                    source={require('/Users/HP/Desktop/React Js/react native/retraiteonline/src/assets/logo.png')}
+                    source ={require('../../assets/logo.png')}
                     style={styles.image}
                 />
                 <View style={styles.formContainer}>
